@@ -7,7 +7,7 @@ In other earlier works CNN-like architectures with self-attention already tried.
 ## Related work
 This paper is very similar to (Cordonnier et. al. 2020) the difference is this paper uses large scale pre-training. Also pixel size for patches differ.
 
-![[model_structure.png]]
+![[./_images/model_structure.png]]
 ## Method
 1. Convert image $x \in \mathbb{R}^{H \times W \times C}$  into patches  $x_{p} \in \mathbb{R}^{N \times (P^{2} \cdot C)}$
 	- H, W: resolution
@@ -36,4 +36,4 @@ Model learns to encode distance within the image in the similarity of position e
 ![[position embeddings.png]]
 
 Also learns to give attentions on meaningful structures in the image
-![[sample_attentions.png]]
+![[./_images/sample_attentions.png]]
